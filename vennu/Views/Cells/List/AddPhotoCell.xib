@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="AddPhotoCell" customModule="Vennu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-M3-6X4" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-lT-zXS" customClass="PickPhotoButton" customModule="Vennu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPhoto:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nNd-I3-t9J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mVZ-lT-zXS" firstAttribute="top" secondItem="rRk-M3-6X4" secondAttribute="top" id="Ah1-jp-EeM"/>
+                            <constraint firstItem="mVZ-lT-zXS" firstAttribute="leading" secondItem="rRk-M3-6X4" secondAttribute="leading" id="EqS-Fm-06b"/>
+                            <constraint firstAttribute="trailing" secondItem="mVZ-lT-zXS" secondAttribute="trailing" id="iQr-LV-trf"/>
+                            <constraint firstAttribute="bottom" secondItem="mVZ-lT-zXS" secondAttribute="bottom" id="itw-wI-j1y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rRk-M3-6X4" secondAttribute="bottom" id="A8w-x2-3kg"/>
+                <constraint firstItem="rRk-M3-6X4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iHC-uD-vfu"/>
+                <constraint firstAttribute="trailing" secondItem="rRk-M3-6X4" secondAttribute="trailing" id="oIP-MJ-5w8"/>
+                <constraint firstItem="rRk-M3-6X4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tHK-vu-QOQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <point key="canvasLocation" x="-12.318840579710146" y="37.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

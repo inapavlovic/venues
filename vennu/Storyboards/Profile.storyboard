@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="feG-sE-LdN">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" definesPresentationContext="YES" id="jV8-v6-DWW" customClass="ProfileViewController" customModule="Vennu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BsX-ih-djV">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KQ-JD-rJH">
+                                <rect key="frame" x="60" y="13.666666666666657" width="692" height="347"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="1000" text="John" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt3-rO-Psy" userLabel="Name Label">
+                                        <rect key="frame" x="7.9999999999999964" y="0.0" width="56.666666666666657" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="1000" text="Smith" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAY-Yw-Cc8" userLabel="Last Name Label">
+                                        <rect key="frame" x="8" y="29" width="66" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neL-jc-kuU" customClass="TitleTunaLabel" customModule="Vennu" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="72" width="91" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rra-Z3-W5e" userLabel="User Info View">
+                                        <rect key="frame" x="-52" y="97" width="796" height="250"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="1da-fi-Kll"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SD-il-O86" userLabel="Edit">
+                                        <rect key="frame" x="668" y="59.333333333333343" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="eyZ-pz-aUv"/>
+                                            <constraint firstAttribute="height" constant="24" id="o3U-OE-EZF"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="square.and.pencil">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                        </state>
+                                        <state key="selected" image="pencil" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                        </state>
+                                        <state key="highlighted" image="pencil" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editUserInfo:" destination="jV8-v6-DWW" eventType="touchUpInside" id="oe2-5h-VCK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="neL-jc-kuU" firstAttribute="top" secondItem="XAY-Yw-Cc8" secondAttribute="bottom" constant="64" id="1dO-74-NSf">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="14"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="4SD-il-O86" secondAttribute="trailing" id="3Kp-Ab-mbs"/>
+                                    <constraint firstItem="Pt3-rO-Psy" firstAttribute="top" secondItem="7KQ-JD-rJH" secondAttribute="top" id="5A1-TV-eRk"/>
+                                    <constraint firstItem="Pt3-rO-Psy" firstAttribute="leading" secondItem="7KQ-JD-rJH" secondAttribute="leadingMargin" id="Ky5-Jl-Hhf"/>
+                                    <constraint firstItem="neL-jc-kuU" firstAttribute="leading" secondItem="Pt3-rO-Psy" secondAttribute="leading" id="MSA-RX-XbE"/>
+                                    <constraint firstItem="Rra-Z3-W5e" firstAttribute="top" secondItem="neL-jc-kuU" secondAttribute="bottom" constant="10" id="V0D-XC-cKG"/>
+                                    <constraint firstItem="XAY-Yw-Cc8" firstAttribute="top" secondItem="Pt3-rO-Psy" secondAttribute="bottom" id="Xgt-U2-eAy"/>
+                                    <constraint firstItem="neL-jc-kuU" firstAttribute="firstBaseline" secondItem="4SD-il-O86" secondAttribute="firstBaseline" constant="24" id="XkJ-HQ-OCK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rra-Z3-W5e" secondAttribute="bottom" id="cCw-EF-Rb6"/>
+                                    <constraint firstItem="XAY-Yw-Cc8" firstAttribute="leading" secondItem="Pt3-rO-Psy" secondAttribute="leading" id="zuB-9u-8OG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bny-ib-gBW"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7KQ-JD-rJH" firstAttribute="centerY" secondItem="bny-ib-gBW" secondAttribute="centerY" id="3m2-jN-i5b">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Rra-Z3-W5e" secondAttribute="trailing" constant="8" id="7ba-as-YY5"/>
+                            <constraint firstItem="Rra-Z3-W5e" firstAttribute="leading" secondItem="BsX-ih-djV" secondAttribute="leading" constant="8" id="cUw-vs-6qe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7KQ-JD-rJH" secondAttribute="leading" id="gQX-3P-xe0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7KQ-JD-rJH" secondAttribute="trailing" id="guK-8L-UOC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editButton" destination="4SD-il-O86" id="yBb-1G-Ycz"/>
+                        <outlet property="lastNameLabel" destination="XAY-Yw-Cc8" id="h0e-p9-SRs"/>
+                        <outlet property="nameLabel" destination="Pt3-rO-Psy" id="WcQ-7I-6OH"/>
+                        <outlet property="userInfoView" destination="Rra-Z3-W5e" id="OBV-76-Zua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAA-Lm-1yD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.95535714285714" y="198.55072463768118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="square.and.pencil" width="24" height="24"/>
+    </resources>
+</document>

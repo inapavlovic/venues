@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MANAGE-->
+        <scene sceneID="7Ja-sY-qvj">
+            <objects>
+                <viewController storyboardIdentifier="ManageViewController" title="MANAGE" id="DB2-nZ-wa2" customClass="ManageViewController" customModule="Vennu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yfv-6T-2iI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATERING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-bS-Rzo" customClass="TitleTunaLabel" customModule="Vennu" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="62" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-MB-e2V" customClass="CardView" customModule="Vennu" customModuleProvider="target">
+                                <rect key="frame" x="10" y="102" width="394" height="285"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PER PERSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXQ-QO-gUU">
+                                        <rect key="frame" x="22" y="251" width="64" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="rXQ-QO-gUU" firstAttribute="leading" secondItem="fI9-MB-e2V" secondAttribute="leading" constant="22" id="Gpp-w8-z1n"/>
+                                    <constraint firstAttribute="height" constant="285" id="nfP-cP-Eyw"/>
+                                    <constraint firstAttribute="bottom" secondItem="rXQ-QO-gUU" secondAttribute="bottom" constant="22" id="rio-ni-BSJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKING FEE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-Bi-BTE" customClass="TitleTunaLabel" customModule="Vennu" customModuleProvider="target">
+                                <rect key="frame" x="20" y="437" width="82" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnQ-y5-Ch9">
+                                <rect key="frame" x="116" y="416.5" width="69" height="56"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ghx-uN-Z2l"/>
+                                    <constraint firstAttribute="width" constant="69" id="tQM-sI-gHS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y6v-EB-lrl"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fI9-MB-e2V" firstAttribute="leading" secondItem="Yfv-6T-2iI" secondAttribute="leading" constant="10" id="6j9-UE-9VC"/>
+                            <constraint firstItem="PnQ-y5-Ch9" firstAttribute="centerY" secondItem="SbT-Bi-BTE" secondAttribute="centerY" id="CfV-Il-SzH"/>
+                            <constraint firstItem="VUl-bS-Rzo" firstAttribute="leading" secondItem="Yfv-6T-2iI" secondAttribute="leadingMargin" id="K4U-Vy-kgg"/>
+                            <constraint firstItem="SbT-Bi-BTE" firstAttribute="leading" secondItem="VUl-bS-Rzo" secondAttribute="leading" id="MR9-em-z2D"/>
+                            <constraint firstItem="fI9-MB-e2V" firstAttribute="top" secondItem="VUl-bS-Rzo" secondAttribute="bottom" constant="23" id="TFY-su-KFw"/>
+                            <constraint firstItem="PnQ-y5-Ch9" firstAttribute="leading" secondItem="SbT-Bi-BTE" secondAttribute="trailing" constant="14" id="TiV-nA-mI2"/>
+                            <constraint firstItem="SbT-Bi-BTE" firstAttribute="top" secondItem="fI9-MB-e2V" secondAttribute="bottom" constant="50" id="p8T-rI-cbg"/>
+                            <constraint firstAttribute="trailing" secondItem="fI9-MB-e2V" secondAttribute="trailing" constant="10" id="vhv-FQ-AjH"/>
+                            <constraint firstItem="VUl-bS-Rzo" firstAttribute="top" secondItem="Y6v-EB-lrl" secondAttribute="top" constant="20" id="xch-RY-aMf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cateringContainerHeight" destination="nfP-cP-Eyw" id="tcr-fY-Ai0"/>
+                        <outlet property="cateringContainerView" destination="fI9-MB-e2V" id="nSO-Dz-tx4"/>
+                        <outlet property="feeTextField" destination="PnQ-y5-Ch9" id="U8e-py-Smq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWI-Mz-NGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="176.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

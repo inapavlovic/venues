@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="PhotoCell" customModule="Vennu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaT-b5-Uhr" userLabel="Container View" customClass="CardView" customModule="Vennu" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vnQ-Ku-uVx">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="80"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-DZ-yO9">
+                                <rect key="frame" x="74" y="5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="0ok-od-vMj"/>
+                                    <constraint firstAttribute="width" constant="24" id="SAM-bl-d0D"/>
+                                </constraints>
+                                <state key="normal" image="x"/>
+                                <connections>
+                                    <action selector="removePhoto:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Ud8-Bc-koK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vnQ-Ku-uVx" secondAttribute="trailing" id="Lzp-fE-eoV"/>
+                            <constraint firstItem="vnQ-Ku-uVx" firstAttribute="leading" secondItem="KaT-b5-Uhr" secondAttribute="leading" id="YZN-HM-Ude"/>
+                            <constraint firstAttribute="bottom" secondItem="vnQ-Ku-uVx" secondAttribute="bottom" id="d9R-AP-dX5"/>
+                            <constraint firstItem="vnQ-Ku-uVx" firstAttribute="top" secondItem="KaT-b5-Uhr" secondAttribute="top" id="ehF-aW-C76"/>
+                            <constraint firstItem="kjd-DZ-yO9" firstAttribute="top" secondItem="KaT-b5-Uhr" secondAttribute="top" constant="5" id="lLg-jZ-YIB"/>
+                            <constraint firstAttribute="trailing" secondItem="kjd-DZ-yO9" secondAttribute="trailing" constant="5" id="wma-xX-eQH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KaT-b5-Uhr" secondAttribute="trailing" id="P65-9D-OYf"/>
+                <constraint firstItem="KaT-b5-Uhr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f1C-vu-7d9"/>
+                <constraint firstItem="KaT-b5-Uhr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iY8-xk-C3h"/>
+                <constraint firstAttribute="bottom" secondItem="KaT-b5-Uhr" secondAttribute="bottom" id="qVh-jh-Ldp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="133" height="97"/>
+            <connections>
+                <outlet property="containerView" destination="KaT-b5-Uhr" id="WGi-bm-Lhn"/>
+                <outlet property="removeButton" destination="kjd-DZ-yO9" id="teS-z9-xTB"/>
+                <outlet property="venueImageView" destination="vnQ-Ku-uVx" id="TFA-41-RQL"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="131.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="x" width="24" height="24"/>
+    </resources>
+</document>

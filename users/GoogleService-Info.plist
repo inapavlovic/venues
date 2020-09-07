@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>300311654469-jrt9fbap87ai8m5502kh9qg954dqf0b9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.300311654469-jrt9fbap87ai8m5502kh9qg954dqf0b9</string>
+	<key>API_KEY</key>
+	<string>API_KEY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>300311654469</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.upgraders.vennuusers</string>
+	<key>PROJECT_ID</key>
+	<string>vennue-b35b7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vennue-b35b7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:300311654469:ios:c04929b15681aa7599732c</string>
+	<key>DATABASE_URL</key>
+	<string>https://vennue-b35b7.firebaseio.com</string>
+</dict>
+</plist>

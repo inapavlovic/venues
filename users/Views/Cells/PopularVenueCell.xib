@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="PopularVenueCell" customModule="Vennu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-2F-veU" customClass="CardView" customModule="Vennu" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haK-mu-Soo">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVG-4e-t5K" customClass="TunaGradientView" customModule="Vennu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="210"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXw-1Q-xWO">
+                                <rect key="frame" x="10" y="185.5" width="42.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="haK-mu-Soo" secondAttribute="trailing" id="30e-vw-a7p"/>
+                            <constraint firstItem="FVG-4e-t5K" firstAttribute="leading" secondItem="haK-mu-Soo" secondAttribute="leading" id="3Tc-VO-LPj"/>
+                            <constraint firstItem="FVG-4e-t5K" firstAttribute="top" secondItem="haK-mu-Soo" secondAttribute="top" id="9Xx-EC-qUZ"/>
+                            <constraint firstItem="FVG-4e-t5K" firstAttribute="trailing" secondItem="haK-mu-Soo" secondAttribute="trailing" id="BiR-Mx-bw4"/>
+                            <constraint firstAttribute="bottom" secondItem="XXw-1Q-xWO" secondAttribute="bottom" constant="5" id="K0N-Ua-cGM"/>
+                            <constraint firstItem="FVG-4e-t5K" firstAttribute="bottom" secondItem="haK-mu-Soo" secondAttribute="bottom" id="KQC-RL-GVR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XXw-1Q-xWO" secondAttribute="trailing" constant="5" id="NZQ-7X-Aro"/>
+                            <constraint firstItem="haK-mu-Soo" firstAttribute="leading" secondItem="XyL-2F-veU" secondAttribute="leading" id="U3M-Ac-OaS"/>
+                            <constraint firstItem="haK-mu-Soo" firstAttribute="top" secondItem="XyL-2F-veU" secondAttribute="top" id="X4o-kU-NKn"/>
+                            <constraint firstItem="XXw-1Q-xWO" firstAttribute="leading" secondItem="XyL-2F-veU" secondAttribute="leading" constant="10" id="cVI-vL-Ino"/>
+                            <constraint firstAttribute="bottom" secondItem="haK-mu-Soo" secondAttribute="bottom" id="qYy-3D-e4z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XyL-2F-veU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="531-Eu-Rcc"/>
+                <constraint firstItem="XyL-2F-veU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="opj-Dw-kxp"/>
+                <constraint firstAttribute="bottom" secondItem="XyL-2F-veU" secondAttribute="bottom" id="sqA-lE-YQ2"/>
+                <constraint firstAttribute="trailing" secondItem="XyL-2F-veU" secondAttribute="trailing" id="xq7-Vq-SfQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="containerView" destination="XyL-2F-veU" id="FSq-Kh-BQK"/>
+                <outlet property="label" destination="XXw-1Q-xWO" id="lHH-Vv-sIk"/>
+                <outlet property="overlayView" destination="FVG-4e-t5K" id="bT6-AR-faY"/>
+                <outlet property="venueImageView" destination="haK-mu-Soo" id="KWK-cI-oQJ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+//
+//  NavigationController.swift
+//  vennu
+//
+//  Created by Ina Statkic on 15/09/2020.
+//  Copyright © 2020 Ina. All rights reserved.
+//
+
+import UIKit.UINavigationController
+
+extension UINavigationController {
+    func setStatusBar(backgroundColor: UIColor) {
+        let statusBarFrame: CGRect
+        if #available(iOS 13.0, *) {
+            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
+        } else {
+            statusBarFrame = UIApplication.shared.statusBarFrame
+        }
+        let statusBarView = UIView(frame: statusBarFrame)
+        statusBarView.backgroundColor = backgroundColor
+        view.addSubview(statusBarView)
+    }
+}
