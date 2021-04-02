@@ -1,3 +1,3 @@
 # Venues
 
-Find a working space you'll love.
+Find a space you'll love.
